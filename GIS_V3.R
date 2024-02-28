@@ -7,7 +7,7 @@ install.packages("raster")
 install.packages("pacman")
 install.packages("leaflet")
 
-pacman::p_load(sf, tidyverse, terra, raster, mapview)
+pacman::p_load(sf, tidyverse, terra, raster, mapview, sp)
 
 
 # Load the data
