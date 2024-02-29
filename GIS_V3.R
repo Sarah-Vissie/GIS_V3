@@ -3,7 +3,7 @@
 install.packages("pacman")
 
 
-pacman::p_load(sf, tidyverse, terra, raster, mapview, sp)
+pacman::p_load(sf, tidyverse, terra, raster, mapview, sp, leaflet)
 
 
 # Load the data
@@ -60,5 +60,8 @@ mapview(aulax_no_fires_sf)
 mapview(fire_2010_2021)
 
 mapview(aulax_no_fires_sf) + mapview(fire_2010_2021, col.regions = "red")
+
+#view using leaflet as satelite imagery
+leaflet() %>% addProviderTiles("Esri.WorldImagery") %>% addMarkers(data = aulax_no_fires_sf, popup = ~Genus_code) %>% addPolygons(data = fire_2010_2021, color = "red")
 
 
