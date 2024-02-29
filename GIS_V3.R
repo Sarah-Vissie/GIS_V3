@@ -1,18 +1,14 @@
-#Find sites without fire for species of interest
-install.packages("tidyverse")
-install.packages("terra")
-install.packages("mapview")
-install.packages("sf")
-install.packages("raster")
+
+
 install.packages("pacman")
-install.packages("leaflet")
+
 
 pacman::p_load(sf, tidyverse, terra, raster, mapview, sp)
 
 
 # Load the data
 
-pa <- read.csv("occ_sub.csv")
+pa <- read.csv("Data/occ_sub.csv")
 
 # Create a simple feature object
 
