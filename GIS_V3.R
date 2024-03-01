@@ -1,7 +1,6 @@
 
-
 install.packages("pacman")
-
+install.packages("rmarkdown")
 
 pacman::p_load(sf, tidyverse, terra, raster, mapview, sp, leaflet)
 
