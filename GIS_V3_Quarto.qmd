@@ -147,4 +147,7 @@ I wanted the background to be a setelite image so I used leaflet to visualize th
 leaflet() %>% addProviderTiles("Esri.WorldImagery") %>% addMarkers(data = aulax_no_fires_sf, popup = ~Genus_code) %>% addPolygons(data = fire_2010_2021, color = "red")
 ```
 
-This is now complete. I can now determine the location of *Aulax* species that haven't been burnt in the last 15 years. Although there are some limitations as the fire data does not include Cape Point or certain fires that were on private land. It also does not include fires between 2021 and present. Therefore it is best to be contact with the approprate land owner before venturing out for data collection. I have added Leucadendron species but did not include it in this assignment.
+This is now complete. I can now determine the location of *Aulax* species that haven't been burnt in the last 15 years. Although there are some limitations as the fire data does not include Cape Point or certain fires that were on private land. It also does not include fires between 2021 and present. Therefore it is best to be contact with the appropriate land owner before venturing out for data collection. I have added Leucadendron species but did not include it in this assignment.
+
+
+
